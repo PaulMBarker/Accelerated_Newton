@@ -28,7 +28,7 @@ function [x,x_error,P] = accelerated_newton(func,dfunc,x_initial,convergence_tol
 % AUTHOR: 
 %  Trevor McDougall, Simon Wotherspoon & Paul Barker   [ help@teos-10.org ]
 %
-% VERSION NUMBER: 1 (9th August, 2019)
+% VERSION NUMBER: 1 (17th September, 2019)
 %
 % REFERENCES:
 %  McDougall, T.J., S.J. Wotherspoon and P.M. Barker, 2019: An Accelerated
@@ -46,7 +46,7 @@ if ~exist('Number_of_iterations','var')
 end
 
 if ~exist('convergence_tolerence','var')
-    convergence_tolerence = 1e-40;
+    convergence_tolerence = 1e-16;
 end
 
     x = x_initial;
